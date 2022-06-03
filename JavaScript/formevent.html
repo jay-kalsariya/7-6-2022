@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+        <label for="">Name</label><input type ="text" id="fname" onfocus="focusfunction(this)"onbulr ="bulrfunction(this)"><br><br>
+        <label for="">class</label><input type ="text" id="cname" onfocus="focusFunction(this)"onbulr ="bulrfunction(this)">
+        <label for ="">contry</label>
+      <select id ="" onfocus="focusFunction(this)" onbulr ="bulrfunction(this)"><br><br>;
+          <option value="">india</option>
+          <option value="">Bangladesh</option>
+          <option value="">sri lanka</option>
+          <option value="">napal</option>
+          <option value="">Butan</option>
+      </select>  
+    </form>
+    <input type="submit">
+    <script>
+function focusFunction(element){
+    element.style.background ="lime";
+
+}
+function blurunction(element){
+    element.style.background ="";
+}
+function submitFunction(){
+    console.log("you submited a form");
+}
+    </script>
+</body>
+</html> 

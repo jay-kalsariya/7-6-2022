@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM NAVGATION</title>
+    <link rel ="stylesheet" href="style.css">
+    <style>
+        #outer{
+            background: yellow;
+            text-align: center;
+        }
+        #inner{
+            background: yellowgreen;
+            
+        }
+
+        h1 {
+            text-align: center;
+            background: yellow;
+        }
+
+        h2 {
+            text-align: center;
+            background: rgb(255, 0, 191);
+        }
+
+      
+
+        #div {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            padding: 1px;
+            background-color: tomato;
+        }
+
+        .Grid-container>div {
+            background-color: #f1f1f1;
+            border: 2px solid blue;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .Grid-container1 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            padding: 10px;
+            background-color: tomato;
+        }
+
+      
+        
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h2>outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id ="child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+</div>
+    </div>
+    <script src ="js/dom-nav.js"></script>
+</body>
+</html>
